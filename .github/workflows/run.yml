@@ -21,7 +21,7 @@ jobs:
         run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-Daily-Login/master/requirements.txt
 
       - name: Gettings files from Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Execute main script
         run: |
@@ -33,3 +33,5 @@ jobs:
           UserAgent: ${{ secrets.GAME_USERAGENT }}
           fateRegion: ${{ secrets.GAME_REGION }}
           webhookDiscord: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - uses: gautamkrishnar/keepalive-workflow@v1
