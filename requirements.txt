@@ -5,3 +5,5 @@ requests
 py3rijndael
 msgpack
 coloredlogs
+fake-useragent
+cryptography~=42.0.7
